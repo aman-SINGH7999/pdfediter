@@ -1,14 +1,10 @@
-// src/app/page.js
-'use client'; // 👈 Ye line add karo (pehli line honi chahiye)
+// app/page.tsx
+import PDFViewerWrapper from '@/components/PDFViewerWrapper';
 
-import PDFViewer from '@/components/PDFViewer';
-import PDFViewerClient from '@/components/PDFViewerClient';
-
-export default function HomePage() {
+export default function Home() {
   return (
     <div>
-      <PDFViewerClient />
-      {/* <PDFViewer /> */}
+      <PDFViewerWrapper />
     </div>
   );
 }
